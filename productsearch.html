@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #search-item {
+            padding: 8px;
+            width: 200px;
+            margin-bottom: 10px;
+        }
+
+        #product {
+            list-style: none;
+            padding: 0;
+        }
+
+        .prodItems {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Search</h1>
+    <input type="text" id="search-item" placeholder="Search products..." oninput="search()">
+    
+    <ul id="product">
+        <li class="prodItems">
+            <h2>Product 1</h2>
+            <!-- Additional product details go here -->
+        </li>
+        <li class="prodItems">
+            <h2>Product 2</h2>
+            <!-- Additional product details go here -->
+        </li>
+        <!-- Add more product items as needed -->
+    </ul>
+
+    <script>
+        const search = () => {
+            const searchbox = document.getElementById('search-item').value.toLowerCase();
+            const storeitems = document.getElementById("product");
+            const products = document.querySelectorAll('.prodItems');
+            const pname = storeitems.getElementsByTagName('h2');
+
+            for (let i = 0; i < pname.length; i++) {
+                let match = products[i].getElementsByTagName('h2')[0];
+                if (match) {
+                    let textValue = match.textContent || match.innerHTML;
+                    if (textValue.toLowerCase().indexOf(searchbox) > -1) {
+                        products[i].style.display = "";
+                    } else {
+                        products[i].style.display = "none";
+                    }
+                }
+            }
+        };
+    </script>
+</body>
+</html>

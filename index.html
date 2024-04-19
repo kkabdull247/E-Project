@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Info | Top Players</title>
+  <link rel="shortcut icon" href="./asset/Sportsinfo 1-01 (1).png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS animation javascript link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class="bg" data-bs-theme="dark">
+  <!-- navbar starts from here -->
+  <nav class="navbar navbar-expand-lg " id="nav">
+    <div id="logo"></div>
+    <div id="outerham">
+      <div class="innerham innerham-inv"></div>
+      <div class="innerham rotate" id="rotate"></div>
+      <div class="innerham innerham-inv"></div>
+    </div>
+    <ul>
+      <li id="home" style="font-size: large; font-weight: bold;"><a href="#">Home</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="sports" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Sports
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="football.html">Football</a></li>
+          <li><a class="dropdown-item" href="hockey.html">Hockey</a></li>
+          <li><a class="dropdown-item" href="tennis.html">Tennis</a></li>
+          <li><a class="dropdown-item" href="basketball.html">Basket-Ball</a></li>
+          <li><a class="dropdown-item" href="cricket.html">Cricket</a></li>
+          <li><a class="dropdown-item" href="badminton.html">Badmanton</a></li>
+          <li><a class="dropdown-item" href="racing.html">Motorcycle Racing</a></li>
+          <li><a class="dropdown-item" href="vollyball.html">Vollyball</a></li>
+          <li><a class="dropdown-item" href="golf.html">Golf</a></li>
+          <li><a class="dropdown-item" href="chess.html">Chess</a></li>
+          <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
+        </ul>
+      </li>
+      <li><a id="about" href="#aboutus">About Us</a></li>
+      <li><a href="#">FeedBack</a></li>
+      <li><a href="#">Contact Us</a></li>
+
+    </ul>
+  </nav>
+  <!-- responsive menu -->
+  <div id="resp" class="resp">
+    <li><a href="index.html">Home</a></li>
+    <li class="item dropdown">
+      <a class="nav-link dropdown-toggle align-items-center text-center mx-auto " href="#" role="button"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        Sports
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="footbal.htmk">Football</a></li>
+        <li><a class="dropdown-item" href="#">Hockey</a></li>
+        <li><a class="dropdown-item" href="#">Tennis</a></li>
+        <li><a class="dropdown-item" href="basketball.html">Basket-Ball</a></li>
+        <li><a class="dropdown-item" href="cricket.html">Cricket</a></li>
+        <li><a class="dropdown-item" href="#">Bedmanton</a></li>
+        <li><a class="dropdown-item" href="#">Motorcycle Racing</a></li>
+        <li><a class="dropdown-item" href="#">Vollyball</a></li>
+        <li><a class="dropdown-item" href="#">Golf</a></li>
+        <li><a class="dropdown-item" href="#">Chess</a></li>
+        <li><a class="dropdown-item" href="#">Swimming</a></li>
+      </ul>
+    </li>
+    <li><a href="#aboutus">About Us</a></li>
+    <li><a href="#">FeedBack</a></li>
+    <li><a href="#">Contact Us</a></li>
+
+    </ul>
+  </div>
+  <!-- responsive menu ending -->
+  <!-- navbar ends here -->
+  <!-- .... -->
+  <!-- .... -->
+  <!-- ... -->
+  <!-- ... -->
+  <!-- first section starts here -->
+  <section id="hero">
+    <h1 class="h1-responsive">SportsInfo:</h1>
+    <h2>"Unveiling the Essence of Athletic Mastery"
+    </h2>
+    <div id="overlay"></div>
+  </section>
+  <!-- first section ends here -->
+  <!-- ... -->
+  <!-- .... -->
+  <!-- second section -->
+  <section id="second-section">
+    <h2 style="text-shadow: 0px 0px 8px 2px #ff9800; text-size-adjust: 2em;">Sports</h2>
+    <div class="input-group  mb-3">
+      <input type="search" class="form-control " id="search-item" oninput="search()" placeholder="Search Info Of Sports">
+      <button class="btn" id="button-addon2">Search</button>
+    </div>
+    <div class="container text-center" id="product">
+      <div class="row mt-5 mb-3" >
+        <div class="col mt-3 prodItems">
+          <div class="cardprod" id="cardprod1">
+            <div class="overlay-grid1">
+              <h3>Basket-Ball</h3>
+              <p>Basketball is a dynamic team sport played between two teams of five players each. The objective is to
+                score points by shooting a ball through the opponent's hoop. Fast-paced and requiring a mix of skill and
+                teamwork, basketball is a globally popular sport.</p>
+              <a href="basketball.html"> <button class="btn" id="button-addon2">View More</button></a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col mt-3 prodItems">
+          <div class="cardprod" id="cardprod2">
+            <div class="overlay-grid2">
+              <h3>Cricket</h3>
+              <p>Cricket is a bat-and-ball sport played between two teams of 11 players each. The batting team aims to
+                score runs by hitting the ball and running between wickets, while the bowling team seeks to dismiss
+                batsmen and limit runs. Popular formats include Tests, ODIs, and T20s, contributing to cricket's global
+                appeal.</p>
+              <a href="cricket.html">
+                <button class="btn" id="button-addon2">View More</button> </a>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-3 prodItems">
+          <div class="cardprod" id="cardprod3">
+            <div class="overlay-grid3">
+              <h3>FootBall</h3>
+              <p>Football is a widely-loved team sport played with two teams of eleven players each. The goal is to
+                score by kicking a ball into the opposing team's net. Renowned for its global popularity, football
+                showcases teamwork, skillful plays, and thrilling competitions like the FIFA World Cup.</p>
+              <a href="football.html"><button class="btn" id="button-addon2">View More</button> </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 mb-3" >
+        <div class="col mt-3 prodItems">
+          <div class="cardprod" id="cardprod4">
+            <div class="overlay-grid4">
+              <h3>Hockey</h3>
+              <p>Hockey is a dynamic team sport where two teams compete to score goals by hitting a puck or ball into
+                the opponent's net with a stick. Whether played on ice or a field, hockey highlights speed, skill, and
+                teamwork, making it a globally beloved sport.</p>
+              <button class="btn" id="button-addon2">View More</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col mt-3 prodItems">
+          <div class="cardprod" id="cardprod5">
+            <div class="overlay-grid5">
+              <h3>Tennis</h3>
+              <p>Tennis is a racquet sport played individually or in pairs, aiming to score points by hitting a ball
+                over a net into the opponent's court. Known for its fast-paced nature and strategic gameplay, tennis is
+                played on various surfaces and enjoyed worldwide as both a recreational and competitive sport.</p>
+              <button class="btn" id="button-addon2">View More</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col mt-3 prodItems">
+          <div class="cardprod" id="cardprod6">
+            <div class="overlay-grid6">
+              <h3>Badminton</h3>
+              <p>Badminton is a racquet sport played by either two individuals (singles) or two pairs (doubles) across a
+                rectangular court divided by a net. The objective is to score points by hitting a shuttlecock over the
+                net, aiming to make it land in the opponent's side. Known for its quick rallies and agility, badminton
+                is played indoors or outdoors, and it's a popular recreational and competitive sport globally.</p>
+              <button class="btn" id="button-addon2">View More</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div><button class="btn view-more" id="button-addon2">View More</button></div>
+      <div id="more-grids">
+        <div class="row mt-5 mb-3 ">
+          <div class="col mt-3 prodItems">
+            <div class="cardprod" id="cardprod7">
+              <div class="overlay-grid7">
+                <h3>Motorcycle-Racing</h3>
+                <p>Motorcycle racing is a high-speed sport where riders compete on specialized bikes in events like road
+                  racing and motocross. Known for its thrilling speed and skillful maneuvers, motorcycle racing attracts
+                  enthusiasts globally, from local races to prestigious international competitions like MotoGP.</p>
+                <button class="btn" id="button-addon2">View More</button>
+
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3 prodItems">
+            <div class="cardprod" id="cardprod8">
+              <div class="overlay-grid8">
+                <h3>VolleyBall</h3>
+                <p>Volleyball is a team sport with six players on each side, aiming to score points by sending a ball
+                  over the net and into the opponent's court. It requires quick reflexes, teamwork, and strategic play.
+                  Popular in both recreational and competitive settings, volleyball is played globally, including beach
+                  volleyball as a popular variant.</p>
+                <button class="btn" id="button-addon2">View More</button>
+
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3 prodItems">
+            <div class="cardprod" id="cardprod9">
+              <div class="overlay-grid9">
+                <h3>Golf</h3>
+                <p>Golf is a precision sport played on a course where players aim to hit a ball into holes with as few
+                  strokes as possible. It emphasizes individual skill and strategy, and it is enjoyed globally as both a
+                  recreational and competitive pursuit.</p>
+                <button class="btn" id="button-addon2">View More</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 mb-3">
+          <div class="col mt-3 prodItems">
+            <div class="cardprod" id="cardprod10">
+              <div class="overlay-grid10">
+                <h3>Chess</h3>
+                <p>Chess is a classic board game played between two players on an 8x8 grid. The goal is to checkmate the
+                  opponent's king. Known for its strategic depth, chess is played globally, combining skill and
+                  foresight in a timeless and enduring game.</p>
+                <button class="btn" id="button-addon2">View More</button>
+
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3 prodItems">
+            <div class="cardprod" id="cardprod11">
+              <div class="overlay-grid11">
+                <h3>Swimming</h3>
+                <p>Swimming is a water sport involving individuals moving through water using different strokes. It is
+                  both a competitive activity, with races in various styles, and a popular recreational pursuit for
+                  fitness. Swimmers may compete in pools or open water, and the sport enjoys global participation,
+                  highlighted in major events like the Olympics.</p>
+                <button class="btn" id="button-addon2">View More</button>
+
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3 prodItems">
+          </div>
+        </div>
+        <div>
+          <button class="btn view-less" id="button-addon2">View Less</button>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- second section ends-->
+  <!-- ... -->
+  <!-- ... -->
+  <!-- about us -->
+  <section id="aboutus">
+    <h2 style="text-align: center; font-size: 3rem; font-weight: bold;">
+        <Span style="color: #ff9800; margin-right: 0.2em;">About</Span><span style="color: #ff9800;">Us</span>
+    </h2>
+    <div class="aboutouter d-lg-flex justify-content-lg-evenly align-items-lg-center mt-5 " id="about1">
+        <div class="aboutcontent">
+            <h2 style="color: #e7e7e7;">
+                Introduction
+            </h2>
+            <p style=" color: #e7e7e7;">
+                Here, we introduce you to Infocom, the
+                visionary <br> multinational company behind the creation <br> of this comprehensive sports
+                information <br>
+                platform.
+            </p>
+        </div>
+        <div class="aboutimg">
+            <img src="./asset/pexels-thiago-kai-9381737.jpg" class="intro img-fluid" alt="aboutimg" height="300px"
+                width="400px">
+        </div>
+    </div>
+    <div class="aboutouter d-lg-flex justify-content-lg-evenly align-items-lg-center " id="about2">
+        <div class="aboutimg">
+            <img src="./asset/pexels-wallace-chuck-2834917.jpg" class="intro img-fluid" alt="aboutimg" height="300px"
+                width="400px">
+        </div>
+        <div class="aboutcontent">
+            <h2>
+                <span style="color: #ff9800;">Infocom</span>
+                <Span style="color: #e7e7e7;">Overview</Span>
+            </h2>
+            <p style="color: #e7e7e7;">
+                Infocom is a dynamic and innovative company specializing in the <br> development of informative
+                websites
+                that cater to diverse<br> interests. With a team of dedicated professionals, we <br> strive to
+                create
+                user-friendly platforms that deliver <br> valuable content and exceptional user <br> experiences.
+            </p>
+        </div>
+
+    </div>
+    <div class="aboutouter d-lg-flex justify-content-lg-evenly align-items-lg-center " id="about3">
+        <div class="aboutcontent" >
+            <h2>
+                <span style="color: #ff9800; ">Our</span>
+                <Span style="color: #e7e7e7;">Mission</Span>
+            </h2>
+            <p style=" color: #e7e7e7;">
+                At Infocom, our mission is to empower users with knowledge by <br>providing reliable and engaging
+                information across various <br> domains. SportsInfo.com is an embodiment of our <br>commitment to
+                delivering high-quality content <br> and fostering a community of sports <br>enthusiasts.
+            </p>
+        </div>
+        <div class="aboutmissionimg">
+            <img src="./asset/mission.jpg" class="intro img-fluid" alt="aboutimg" height="300px"
+            width="400px">
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- cursor -->
+  <div id="cursor"></div>
+  <!-- cursor -->
+  <footer></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    AOS.init();
+</script>
+  <script src="main.js"></script>
+  <script>
+    
+
+
+
+
+
+
+// navbar
+window.addEventListener('scroll',() => {
+        const verticalScrollpx = window.scrollY || window.pageYOffset;
+        const navbar = document.getElementById('nav')
+        const home = document.getElementById('home')
+        const sports = document.getElementById('sports')
+        const aboutus = document.getElementById('about')
+        const cardprod = document.getElementsByClassName('cardprod')
+        const viewmorebtn = document.getElementsByClassName('view-more')
+
+        if(verticalScrollpx  <500 ){
+            navbar.style.backgroundColor = "";
+            navbar.style.backdropFilter = "none";
+            navbar.style.border = "none";
+            home.style.fontSize="large"
+            home.style.fontWeight="bold"
+            sports.style.fontSize="medium"
+            sports.style.fontWeight='400'
+            aboutus.style.fontSize="medium"
+            aboutus.style.fontWeight="400"  
+            navbar.style.opacity="1";            
+
+        }
+        else if(verticalScrollpx <1600 && verticalScrollpx >500){
+          // if(cardprod.length <7 ){
+            navbar.style.backgroundColor = "black";
+            navbar.style.opacity="0.8"; 
+            home.style.fontSize="medium"
+            home.style.fontWeight='400' 
+            sports.style.fontSize="large"
+            sports.style.fontWeight="bold"
+            aboutus.style.fontSize="medium"
+            aboutus.style.fontWeight="400"          
+            navbar.style.boxShadow="none";
+            navbar.style.backdropFilter = "blur( 20px )";
+            navbar.style.borderRadius= "10px";
+            navbar.style.border = "1px solid rgba( 255, 255, 255, 0.18 )"
+          // }
+          }
+          // else if(cardprod.length >=11){}
+        else if(verticalScrollpx <2000 && verticalScrollpx >1600){
+            navbar.style.backgroundColor = "black";
+            navbar.style.opacity="0.8"; 
+            home.style.fontSize="medium"
+            home.style.fontWeight='400' 
+            sports.style.fontSize="medium"
+            sports.style.fontWeight="400"          
+            navbar.style.boxShadow="none";
+            aboutus.style.fontSize="large"
+            aboutus.style.fontWeight="bold"
+            navbar.style.backdropFilter = "blur( 20px )";
+            navbar.style.borderRadius= "10px";
+            navbar.style.border = "1px solid rgba( 255, 255, 255, 0.18 )";
+            
+        }
+      });
+// navbar
+
+$(document).ready(function(){
+    $(document).mousemove(function(e){
+        $('#cursor').offset({
+             top:e.pageY,
+             left:e.pageX+10
+        })
+    })
+    $('#outerham').click(function(){
+      $('#resp').slideToggle()
+      $('.rotate').toggleClass('hamrotate')
+      $('.innerham-inv').slideToggle()
+
+
+    })
+    // grid work start here
+    $('#cardprod1').mouseenter(function(){
+      $('.overlay-grid1').show()
+        $('.overlay-grid1').animate({
+          height : "100%",
+          // width : "100%"
+        });
+        
+    })
+    
+    $('#cardprod1').mouseleave(function(){
+      // $('.overlay-grid1').hide()
+      $('.overlay-grid1').animate({
+          height : "0",
+        
+          // width : "0%"
+        })
+      $('.overlay-grid1').hide()
+
+    })
+    $('#cardprod2').mouseenter(function(){
+      $('.overlay-grid2').show()
+        $('.overlay-grid2').animate({
+          height : "100%",
+          // width : "100%"
+        });
+        
+    })
+
+    $('#cardprod2').mouseleave(function(){
+      // $('.overlay-grid1').hide()
+      $('.overlay-grid2').animate({
+          height : "0",
+        
+          // width : "0%"
+        })
+      $('.overlay-grid2').hide()
+
+    })
+    $('#cardprod3').mouseenter(function(){
+      $('.overlay-grid3').show()
+        $('.overlay-grid3').animate({
+          height : "100%",
+          // width : "100%"
+        });
+        
+    })
+    
+    $('#cardprod3').mouseleave(function(){
+      // $('.overlay-grid1').hide()
+      $('.overlay-grid3').animate({
+          height : "0",
+        
+          // width : "0%"
+        })
+      $('.overlay-grid3').hide()
+
+    })
+    $('#cardprod4').mouseenter(function(){
+      $('.overlay-grid4').show()
+        $('.overlay-grid4').animate({
+          height : "100%",
+          // width : "100%"
+        });
+        
+    })
+    
+    $('#cardprod4').mouseleave(function(){
+      // $('.overlay-grid1').hide()
+      $('.overlay-grid4').animate({
+          height : "0",
+        
+          // width : "0%"
+        })
+      $('.overlay-grid4').hide()
+
+    })
+    $('#cardprod5').mouseenter(function(){
+      $('.overlay-grid5').show()
+        $('.overlay-grid5').animate({
+          height : "100%",
+          // width : "100%"
+        });
+        
+    })
+    
+    $('#cardprod5').mouseleave(function(){
+      // $('.overlay-grid1').hide()
+      $('.overlay-grid5').animate({
+          height : "0",
+        
+          // width : "0%"
+        })
+      $('.overlay-grid5').hide()
+
+    })
+    $('#cardprod6').mouseenter(function(){
+      $('.overlay-grid6').show()
+        $('.overlay-grid6').animate({
+          height : "100%",
+          // width : "100%"
+        });
+        
+    })
+    
+    $('#cardprod6').mouseleave(function(){
+      // $('.overlay-grid1').hide()
+      $('.overlay-grid6').animate({
+          height : "0",
+        
+          // width : "0%"
+        })
+      $('.overlay-grid6').hide()
+
+    })
+    $('#cardprod7').mouseenter(function(){
+      $('.overlay-grid7').show()
+        $('.overlay-grid7').animate({
+          height : "100%",
+          // width : "100%"
+        });
+        
+    })
+    
+    $('#cardprod7').mouseleave(function(){
+      // $('.overlay-grid1').hide()
+      $('.overlay-grid7').animate({
+          height : "0",
+        
+          // width : "0%"
+        })
+      $('.overlay-grid7').hide()
+
+    })
+    $('#cardprod8').mouseenter(function(){
+      $('.overlay-grid8').show()
+        $('.overlay-grid8').animate({
+          height : "100%",
+          // width : "100%"
+        });
+        
+    })
+    
+    $('#cardprod8').mouseleave(function(){
+      // $('.overlay-grid1').hide()
+      $('.overlay-grid8').animate({
+          height : "0",
+        
+          // width : "0%"
+        })
+      $('.overlay-grid8').hide()
+
+    })
+    $('#cardprod9').mouseenter(function(){
+      $('.overlay-grid9').show()
+        $('.overlay-grid9').animate({
+          height : "100%",
+          // width : "100%"
+        });
+        
+    })
+    
+    $('#cardprod9').mouseleave(function(){
+      // $('.overlay-grid1').hide()
+      $('.overlay-grid9').animate({
+          height : "0",
+        
+          // width : "0%"
+        })
+      $('.overlay-grid9').hide()
+
+    })
+    $('#cardprod10').mouseenter(function(){
+      $('.overlay-grid10').show()
+        $('.overlay-grid10').animate({
+          height : "100%",
+          // width : "100%"
+        });
+        
+    })
+    
+    $('#cardprod10').mouseleave(function(){
+      // $('.overlay-grid1').hide()
+      $('.overlay-grid10').animate({
+          height : "0",
+        
+          // width : "0%"
+        })
+      $('.overlay-grid10').hide()
+
+    })
+    $('#cardprod11').mouseenter(function(){
+      $('.overlay-grid11').show()
+        $('.overlay-grid11').animate({
+          height : "100%",
+          // width : "100%"
+        });
+        
+    })
+    
+    $('#cardprod11').mouseleave(function(){
+      // $('.overlay-grid1').hide()
+      $('.overlay-grid11').animate({
+          height : "0",
+        
+          // width : "0%"
+        })
+      $('.overlay-grid11').hide()
+
+    })
+    
+    // grid work end here
+    // grid buttons validation start
+
+    $('.view-more').click(function(){
+        $('#more-grids').show()
+        $(this).hide()
+    })
+    $('.view-less').click(function(){
+        $('#more-grids').hide()
+        $('.view-more').show()
+    })
+    // grid button validations end
+
+    
+
+})
+  </script>
+  
+  <script>
+    const search = () => {
+        const searchbox = document.getElementById('search-item').value.toLowerCase();
+        const storeitems = document.getElementById("product");
+        const products = document.querySelectorAll('.prodItems');
+        const pname = storeitems.getElementsByTagName('h3');
+
+        for (let i = 0; i < pname.length; i++) {
+            let match = products[i].getElementsByTagName('h3')[0];
+            if (match) {
+                let textValue = match.textContent || match.innerHTML;
+                if (textValue.toLowerCase().indexOf(searchbox) > -1) {
+                    products[i].style.display = "";
+                } else {
+                    products[i].style.display = "none";
+                }
+            }
+        }
+    };
+</script>
+</body>
+
+</html>

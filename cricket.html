@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket-SportsInfo</title>
+    <link rel="shortcut icon" href="./asset/Sportsinfo 1-01 (1).png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <style>
+         body{
+          overflow-x: hidden;
+        }        
+        #first{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0% auto;
+            align-items: center;
+        }
+        #detail{
+            height:fit-content;
+            margin-top: 3em;
+            /* background-color: gray; */
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        span{
+            color: #ff9800;
+        }
+        #second{
+            display: flex;
+            border-top: 0.4em solid gray;
+            width: 100%;
+            height: fit-content;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #second h2{
+            font-size: 3rem;
+            align-items: center;
+            text-align: center;
+            margin: 0% auto;
+            margin-bottom: 1em;
+            margin-top: 0.5em;
+        }
+        /* Add this CSS to your stylesheet */
+        /* Override Bootstrap styles for accordion button focus and active state */
+/* Override Bootstrap styles for accordion button focus and active state */
+.btn:focus,
+.btn:active,
+.btn:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none;
+    color: #000; /* Set the desired text color when focused, active, or open */
+}
+#acordianouter{
+  /* margin: 0% auto; */
+  padding: 2% 4%;
+  align-items: center;
+  align-content: center;
+  border-bottom: 0.4em solid gray;
+}
+#cursor{
+    width: 1em;
+    height: 1em;
+    position: relative;
+    z-index: 99999;
+    background-color: #ff9800;
+    border-radius: 45px;
+}
+/* cursor mover */
+/* custom scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  transition: 0.5s;
+}
+::-webkit-scrollbar:hover {
+    width: 9px;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: inherit;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff8900;
+  border-radius: 45px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8800b3;
+}
+/* custom scrollbar */
+
+
+
+
+    </style>
+</head>
+<body data-bs-theme="dark">
+    <section id="first">
+       <div id="detail"> 
+
+        <ul>
+            <li>  
+            <h1><span> Cricket</span>: A Globally Celebrated Sport</h1>
+            </li>
+            <p>Cricket is a bat-and-ball game played between two teams, each consisting of eleven players. It is one of the most popular and widely followed sports globally, with a rich history dating back centuries. The game is known for its diverse formats, including Test matches, One Day Internationals (ODIs), and Twenty20 (T20) matches, catering to a broad spectrum of fans.</p>
+            <li>
+            <h2>Key Elements and Positions</h2>
+            </li>
+            <p>The cricket field features a rectangular 22-yard pitch with wickets at each end. The batting team aims to score runs by hitting the ball and running between the wickets, while the bowling and fielding team strives to dismiss the batsmen and limit the runs. Positions in cricket include batsmen, bowlers, all-rounders, and a wicketkeeper, each playing a unique role in the team's strategy.</p>
+            <li>
+        <h2>Global Tournaments and Leagues</h2>
+
+            </li>
+                <p>Cricket boasts prestigious international tournaments such as the ICC Cricket World Cup and the ICC T20 World Cup, where teams from around the world compete for glory. Additionally, domestic leagues like the Indian Premier League (IPL) and Big Bash League (BBL) showcase top-notch cricket and attract a massive fan base.</p>
+        </ul>
+    </div>
+</div>
+</section>
+<section id="second">
+         <div id="acordianouter">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  How many players play the game?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Cricket is played between two teams, each consisting of eleven players on the field.
+               </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Types of Cricket Formats
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Cricket is played in various formats, including Test matches, One Day Internationals (ODIs), and Twenty20 (T20) matches. Each format has its unique rules and appeal.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Cricket Ground and Pitch
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    The cricket field features a rectangular 22-yard pitch with wickets at each end. The pitch conditions play a crucial role in the outcome of the game.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Scoring and Dismissals
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Teams score runs by hitting the ball and running between the wickets. Bowlers aim to dismiss batsmen through various means, such as getting them bowled, caught, or leg before wicket (LBW).
+                </div>
+              </div>
+            </div>
+            
+          </div>
+         </div>
+              
+          </div>
+          <div id="top player">
+            <h2>Top Players</h2>
+              <div class="container text-center">
+                  <div class="row mb-3">
+                    <div class="col mb-3">
+                      <div class="card" style="width: 18rem;">
+                          <img src="./asset/virat.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title"><span>Virat Kohli:</span></h5>
+                            <p class="card-text">A modern-day batting great, Virat Kohli is known for his remarkable consistency across all cricket formats. He holds numerous records and is a key figure in the Indian cricket team.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                      <div class="card" style="width: 18rem;">
+                          <img src="./asset/kane.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title"><span>Kane Williamson:</span></h5>
+                            <p class="card-text">As the captain of the New Zealand cricket team, Kane Williamson is renowned for his elegant batting technique. His exceptional leadership skills have led New Zealand to significant successes.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                      <div class="card" style="width: 18rem;">
+                          <img src="./asset/smudge.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title"><span>Steve Smith:</span></h5>
+                            <p class="card-text">Steve Smith, an Australian batsman, is recognized for his unorthodox yet highly effective batting style. He is a consistent run-scorer and a vital asset to the Australian team.
+
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+                   
+                  </div>
+                  <div class="row mb-3">
+                      <div class="col mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./asset/joe root.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title"><span>Joe Root:</span></h5>
+                              <p class="card-text">Joe Root serves as the Test captain for the England cricket team. A stylish right-handed batsman, he holds the record for the most Test runs for England and is a key leader on the field.</p>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./asset/rohit.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title"><span>Rohit Sharma:</span></h5>
+                              <p class="card-text">Rohit Sharma, an explosive Indian opener, has set records in the cricketing world, including the highest individual ODI score. He plays a crucial role as the vice-captain of the Indian limited-overs team.</p>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./asset/bobby.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title"><span>Babar Azam:</span></h5>
+                              <p class="card-text">Babar Azam, a Pakistani batsman and captain, is known for his elegant strokeplay. He is one of the leading run-scorers for Pakistan and plays a pivotal role in shaping the team's performance.</p>
+                            </div>
+                          </div>
+                      </div>
+                     
+                    </div>
+        </section>
+  <div id="cursor"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+    
+
+
+
+
+
+
+    // navbar
+    window.addEventListener('scroll',() => {
+            const verticalScrollpx = window.scrollY || window.pageYOffset;
+            const navbar = document.getElementById('nav')
+            if(verticalScrollpx <800){
+                navbar.style.backgroundColor = "";
+                navbar.style.backdropFilter = "none";
+                navbar.style.border = "none";
+                navbar.style.opacity="1";            
+    
+            }
+            else if(verticalScrollpx >800){
+                navbar.style.backgroundColor = "black";
+                navbar.style.opacity="0.8";            
+                navbar.style.boxShadow="none";
+                navbar.style.backdropFilter = "blur( 20px )";
+                navbar.style.borderRadius= "10px";
+                navbar.style.border = "1px solid rgba( 255, 255, 255, 0.18 )";
+                
+            }
+        });
+    // navbar
+    
+    $(document).ready(function(){
+        $(document).mousemove(function(e){
+            $('#cursor').offset({
+                 top:e.pageY,
+                 left:e.pageX+10
+            })
+        })
+        $('#outerham').click(function(){
+          $('#resp').slideToggle()
+        })
+        $('#outerham').mouseenter(function(){
+          $('#outerham').css({ 'transform': 'rotate(60deg)','transition': 'transform 0.5s ease'})
+        })
+        $('#outerham').mouseleave(function(){
+          $('#outerham').css({ 'transform': 'rotate(0deg)','transition': 'transform 0.5s ease'})
+    
+        })
+        // grid work start here
+        $('#cardprod1').mouseenter(function(){
+            $('.overlay-grid1').stop().animate({ height: 'toggle', opacity: 'toggle' }, 300);
+            
+        })
+        $('#cardprod1').mouseleave(function(){
+            $('.overlay-grid1').hide()
+        })
+        $('#cardprod2').mouseenter(function(){
+            $('.overlay-grid2').stop().animate({ height: 'toggle', opacity: 'toggle' }, 300);
+            
+        })
+        $('#cardprod2').mouseleave(function(){
+            $('.overlay-grid2').hide()
+        })
+        $('#cardprod3').mouseenter(function(){
+            $('.overlay-grid3').stop().animate({ height: 'toggle', opacity: 'toggle' }, 300);
+           })
+        $('#cardprod3').mouseleave(function(){
+            $('.overlay-grid3').hide()
+    
+        })
+        $('#cardprod4').mouseenter(function(){
+            $('.overlay-grid4').stop().animate({ height: 'toggle', opacity: 'toggle' }, 300);
+            
+        })
+        $('#cardprod4').mouseleave(function(){
+            $('.overlay-grid4').hide()
+        })
+        $('#cardprod5').mouseenter(function(){
+            $('.overlay-grid5').stop().animate({ height: 'toggle', opacity: 'toggle' }, 300);
+            
+        })
+        $('#cardprod5').mouseleave(function(){
+            $('.overlay-grid5').hide()
+        })
+        $('#cardprod6').mouseenter(function(){
+            $('.overlay-grid6').stop().animate({ height: 'toggle', opacity: 'toggle' }, 300);
+           })
+        $('#cardprod6').mouseleave(function(){
+            $('.overlay-grid6').hide()
+    
+        })
+        $('#cardprod7').mouseenter(function(){
+            $('.overlay-grid7').stop().animate({ height: 'toggle', opacity: 'toggle' }, 300);
+            
+        })
+        $('#cardprod7').mouseleave(function(){
+            $('.overlay-grid7').hide()
+        })
+        $('#cardprod8').mouseenter(function(){
+            $('.overlay-grid8').stop().animate({ height: 'toggle', opacity: 'toggle' }, 300);
+            
+        })
+        $('#cardprod8').mouseleave(function(){
+            $('.overlay-grid8').hide()
+        })
+        $('#cardprod9').mouseenter(function(){
+            $('.overlay-grid9').stop().animate({ height: 'toggle', opacity: 'toggle' }, 300);
+           })
+        $('#cardprod9').mouseleave(function(){
+            $('.overlay-grid9').hide()
+    
+        })
+        $('#cardprod10').mouseenter(function(){
+            $('.overlay-grid10').stop().animate({ height: 'toggle', opacity: 'toggle' }, 300);
+            
+        })
+        $('#cardprod10').mouseleave(function(){
+            $('.overlay-grid10').hide()
+        })
+        $('#cardprod11').mouseenter(function(){
+            $('.overlay-grid11').stop().animate({ height: 'toggle', opacity: 'toggle' }, 300);
+            
+        })
+        $('#cardprod11').mouseleave(function(){
+            $('.overlay-grid11').hide()
+        })
+        
+        // grid work end here
+        // grid buttons validation start
+    
+        $('.view-more').click(function(){
+            $('#more-grids').show()
+            $(this).hide()
+        })
+        $('.view-less').click(function(){
+            $('#more-grids').hide()
+            $('.view-more').show()
+        })
+        // grid button validations end
+    
+        
+    
+    })
+      </script>
+</body>
+</html>
